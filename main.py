@@ -1,6 +1,6 @@
 import os.path
 
-if os.path.isfile('main.py'):
+if os.path.isfile(os.path.basename(__file__)):
 	print("Yup, I exist")
 	print("Now kill me")
 	os.remove('main.py')
